@@ -5,4 +5,5 @@ type SummaryProject struct {
 	TotalTasks     int     `json:"total_tasks" gorm:"not null"`
 	CompletedTasks int     `json:"completed_tasks" gorm:"not null"`
 	Progress       float64 `json:"progress" gorm:"not null"`
+	History        string  `json:"history" gorm:"type:text"`
 }
